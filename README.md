@@ -31,7 +31,7 @@ Cerita Kita adalah platform berbagi cerita yang menghubungkan orang-orang melalu
 
 </div>
 
-## �� Memulai
+## 🔃 Memulai
 
 ### Prasyarat
 
@@ -65,7 +65,7 @@ yarn dev
 
 ## 📱 Fitur PWA
 
-- �� **Instalasi di Perangkat**: Pasang aplikasi di perangkatmu
+- 💻 **Instalasi di Perangkat**: Pasang aplikasi di perangkatmu
 - 🔄 **Background Sync**: Sinkronisasi data di background
 - 💾 **Offline Storage**: Akses konten tanpa internet
 - ⚡ **Fast Loading**: Performa optimal dengan service worker
@@ -80,12 +80,12 @@ Kami sangat menghargai kontribusi dari komunitas! Berikut cara Anda bisa berkont
 4. Push ke branch (`git push origin feature/AmazingFeature`)
 5. Buka Pull Request
 
-## �� Kontak
+## 📔 Kontak
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammad-ridho-a3517b309/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/mmrdhoo/)
 
 </div>
 
