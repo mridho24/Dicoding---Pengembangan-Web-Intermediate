@@ -1,0 +1,31 @@
+{
+  "name": "Cerita-Kita",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-icons": "node scripts/generate-icons.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.1",
+    "vite": "^6.3.4",
+    "vite-plugin-pwa": "^0.21.2",
+    "workbox-background-sync": "^7.3.0",
+    "workbox-cacheable-response": "^7.3.0",
+    "workbox-expiration": "^7.3.0",
+    "workbox-precaching": "^7.3.0",
+    "workbox-routing": "^7.3.0",
+    "workbox-strategies": "^7.3.0"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.15",
+    "axios": "^1.6.2",
+    "idb": "^8.0.3",
+    "leaflet": "^1.9.4",
+    "sweetalert2": "^11.21.2",
+    "workbox-window": "^7.0.0"
+  }
+}

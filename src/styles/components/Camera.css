@@ -1,0 +1,227 @@
+.photo-capture {
+  margin-bottom: var(--space-lg);
+}
+
+.photo-capture__preview-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: var(--gray-100);
+  border-radius: var(--rounded-md);
+  overflow: hidden;
+  margin-bottom: var(--space-md);
+}
+
+/* Camera and canvas elements */
+.photo-capture__camera,
+.photo-capture__canvas,
+.photo-capture__preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-capture__camera {
+  display: none;
+  background-color: var(--dark);
+}
+
+.photo-capture__canvas {
+  display: none;
+  background-color: var(--gray-100);
+}
+
+.photo-capture__preview {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-capture__preview::before {
+  content: "No photo selected";
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.photo-capture__preview[style*="background-image"]::before {
+  content: "";
+}
+
+/* Controls and actions */
+.photo-capture__actions {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.photo-capture__button {
+  flex: 1;
+  min-width: 120px;
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--rounded-sm);
+  cursor: pointer;
+  font-size: var(--text-base);
+  transition: background-color 0.3s ease;
+}
+
+.photo-capture__button:hover {
+  background-color: var(--primary-dark);
+}
+
+.photo-capture__button:active {
+  background-color: var(--primary-darker);
+}
+
+.photo-capture__button:disabled {
+  background-color: var(--gray-400);
+  cursor: not-allowed;
+}
+
+.photo-capture__file-input {
+  margin-top: var(--space-md);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .photo-capture__preview-container {
+    height: 250px;
+  }
+
+  .photo-capture__actions {
+    flex-direction: column;
+  }
+
+  .photo-capture__button {
+    width: 100%;
+  }
+}
+
+.camera-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#camera-preview {
+  width: 100%;
+  display: block;
+  background-color: var(--dark);
+  border-radius: var(--rounded-md);
+}
+
+#photo-canvas {
+  width: 100%;
+  display: block;
+  background-color: var(--gray-100);
+  border-radius: var(--rounded-md);
+  position: relative;
+  z-index: 2;
+}
+
+.camera-controls {
+  margin-top: var(--space-md);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+#capture-button {
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--rounded-sm);
+  cursor: pointer;
+  font-size: var(--text-base);
+  transition: background-color 0.3s ease;
+}
+
+#capture-button:hover {
+  background-color: var(--primary-dark);
+}
+
+#capture-button:active {
+  background-color: var(--primary-darker);
+}
+
+#photo-canvas.visible {
+  display: block !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .camera-container {
+    max-width: 100%;
+  }
+  
+  .camera-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.media-box__preview {
+  aspect-ratio: 16/9;
+  background: var(--gray-100);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.media-box__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.tool-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 140, 0, 0.1);
+  color: #FF8C00;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tool-button:hover:not(:disabled) {
+  background: #FF8C00;
+  color: white;
+}
+
+.tool-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .media-box__tools {
+    flex-direction: column;
+  }
+
+  .tool-button {
+    width: 100%;
+  }
+}

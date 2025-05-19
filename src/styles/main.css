@@ -1,0 +1,56 @@
+/* Base Styles */
+@import "./base/Variables.css";
+@import "./base/Reset.css";
+@import "./base/Typhography.css";
+@import "./base/Layout.css";
+
+/* Components */
+@import "./components/AppBar.css";
+@import "./components/Buttons.css";
+@import "./components/Forms.css";
+@import "./components/Story-Item.css";
+@import "./components/Loading.css";
+@import "./components/Map.css";
+@import "./components/Camera.css";
+
+/* Pages */
+@import "./pages/Home.css";
+@import "./pages/Detail.css";
+@import "./pages/AddStory.css";
+@import "./pages/Authentication.css";
+@import './pages/Login.css';
+@import './pages/Register.css';
+@import './pages/save-story.css';
+
+/* View Transitions */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+::view-transition-old(root) {
+  animation: 0.3s fade-out ease;
+}
+
+::view-transition-new(root) {
+  animation: 0.3s fade-in ease;
+}
+
+html {
+  view-transition-name: root;
+}

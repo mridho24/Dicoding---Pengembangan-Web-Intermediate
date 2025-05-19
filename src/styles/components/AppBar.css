@@ -1,0 +1,300 @@
+.app-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .app-nav__brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-nav__brand a {
+    text-decoration: none; /* Removes underline from the link */
+  }
+  
+  .app-nav__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF8C00; /* Changed from #FFD700 to orange */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .app-nav__title:hover {
+    color: #FF6B00; /* Slightly darker orange on hover */
+    text-decoration: none; /* Ensures no underline on hover */
+  }
+  
+  .app-nav__title i {
+    font-size: 1.75rem;
+    color: #FF8C00; /* Making the icon match the text color */
+  }
+  
+  .app-nav__list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .app-nav__user-menu {
+    position: relative;
+  }
+  
+  .app-nav__user-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: var(--font-medium);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .app-nav__user-button:hover {
+    background-color: rgba(var(--primary-rgb), 0.1);
+  }
+  
+  .app-nav__dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .app-nav__dropdown--active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .app-nav__dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: var(--font-medium);
+    text-align: left;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .app-nav__dropdown-item:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .app-nav__dropdown {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+  }
+  
+  .app-nav__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .app-nav__link:hover {
+    background-color: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary-color);
+  }
+  
+  .app-nav__link--register {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .app-nav__link--register:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .app-nav {
+        padding: 1rem;
+    }
+  
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        color: var(--text-color);
+    }
+  
+    .app-nav__list {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 1rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .app-nav__list--open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+  
+    .app-nav__item {
+        width: 100%;
+    }
+  
+    .app-nav__link,
+    .app-nav__user-button {
+        width: 100%;
+        justify-content: flex-start;
+    }
+  
+    .app-nav__dropdown {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+  }
+  
+  .app-nav__user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-color);
+  }
+  
+  .app-nav__button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--font-medium);
+    transition: all 0.3s ease;
+  }
+  
+  .app-nav__button--primary {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+  }
+  
+  .app-nav__button--primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .app-nav__button--danger {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+  }
+  
+  .app-nav__button--danger:hover {
+    background-color: var(--error);
+    color: var(--white);
+  }
+    
+    .app-nav__list {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .app-nav__list {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    
+      .app-nav__item {
+        width: 100%;
+      }
+    
+      .app-nav__button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  .app-nav__button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--font-medium);
+    transition: all 0.3s ease;
+  }
+  
+  .app-nav__button--primary {
+    background-color: rgba(255, 140, 0, 0.1); /* Light orange background */
+    color: #FF8C00; /* Orange text */
+  }
+  
+  .app-nav__button--primary:hover {
+    background-color: #FF8C00; /* Solid orange on hover */
+    color: var(--white);
+  }
+  
+  .app-nav__button--danger {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+  }
+  
+  .app-nav__button--danger:hover {
+    background-color: var(--error);
+    color: var(--white);
+  }
