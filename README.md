@@ -89,14 +89,10 @@ Kami sangat menghargai kontribusi dari komunitas! Berikut cara Anda bisa berkont
 
 </div>
 
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file [LICENSE](LICENSE) untuk detail.
-
 ---
 
 <div align="center">
 
-Dibuat dengan ❤️ oleh Tim Cerita Kita
+Dibuat dengan ❤️ oleh Saya sendiri hehe
 
 </div>
