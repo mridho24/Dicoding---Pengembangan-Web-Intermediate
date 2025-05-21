@@ -5,6 +5,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Deployment](https://img.shields.io/badge/deployed-netlify-00C7B7?style=flat&logo=netlify&logoColor=white)](https://spiffy-kringle-ed8336.netlify.app)
 
 </div>
 
@@ -15,7 +16,6 @@ Cerita Kita adalah platform berbagi cerita yang menghubungkan orang-orang melalu
 ## ✨ Fitur Utama
 
 - 📝 **Berbagi Cerita**: Ungkapkan pengalamanmu dengan mudah
-- ��️ **Peta Interaktif**: Jelajahi lokasi cerita dengan visualisasi peta
 - 📱 **Mode Offline**: Akses cerita favoritmu tanpa internet
 - 🔄 **Background Sync**: Sinkronisasi otomatis saat online
 - 💾 **Penyimpanan Lokal**: Akses cepat ke cerita yang sudah dibaca
